@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 5</title>
+        <h1>"Visit cities with Guduru Revathi"</h1>
+        <title>Container with rows and columns</title>
+        <style>
+            @media (max-width: 768px) {
+                #break-message {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Container">
+            <!-- First Row -->
+            <div class="row">
+                <!-- Six columns with letters -->
+                <div class="col-sm-2">G</div>
+                <div class="col-sm-2">U</div>
+                <div class="col-sm-2">D</div>
+                <div class="col-sm-2">U</div>
+                <div class="col-sm-2">R</div>
+                <div class="col-sm-2">U</div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="row">
+                <!-- Six columns with letters -->
+                <div class="col-sm-2">Glasgow</div>
+                <div class="col-sm-2">Utrecht</div>
+                <div class="col-sm-2">Dallas</div>
+                <div class="col-sm-2">Uppsala</div>
+                <div class="col-sm-2">Rome</div>
+                <div class="col-sm-2">Ulan-Ude</div>
+
+            </div>
+        </div>
+        <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript to show a message when the row breaks
+        function checkRowBreak() {
+            const lettersRow = document.querySelector(".container .row:first-child");
+            const cityNamesRow = document.querySelector(".container .row:last-child");
+            const breakMessage = document.getElementById("break-message");
+
+            if (lettersRow.getBoundingClientRect().bottom > cityNamesRow.getBoundingClientRect().top) {
+                breakMessage.textContent = "The city names row breaks first.";
+            } else {
+                breakMessage.textContent = "The letters row breaks first.";
+            }
+        }
+
+        window.addEventListener("resize", checkRowBreak);
+    </script>
+
+    <!-- Message to display which row breaks first -->
+    <p id="break-message" style="display: none;"> </p>
+</body>
+</html>
+
+
+
+
+
+
+
+        
+    </body>
+</html>
