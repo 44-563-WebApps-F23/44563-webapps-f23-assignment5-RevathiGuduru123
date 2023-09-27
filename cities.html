@@ -22,6 +22,25 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="cities.html">A Few Cities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcities">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-link">
+                        <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="advanced.html">Advanced</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="Container">
         <!-- First Row -->
         <div class="row">
@@ -53,13 +72,13 @@
         <h4>Responsive</h4>
         <div class="row">
             <div class="col-md-4">
-                <img src="Glasgow.jpg" alt="Glasgow" class="img-fluid"height="300" width="300">
+                <img src="Glasgow.jpg" alt="Glasgow" class="img-fluid" height="300" width="300">
             </div>
             <div class="col-md-4">
-                <img src="Dallas.jpg.jpg" alt="Dallas" class="img-fluid"height="300" width="300">
+                <img src="Dallas.jpg.jpg" alt="Dallas" class="img-fluid" height="300" width="300">
             </div>
             <div class="col-md-4">
-                <img src="Rome.jpg" alt="Rome" class="img-fluid"height="300" width="300">
+                <img src="Rome.jpg" alt="Rome" class="img-fluid" height="300" width="300">
             </div>
         </div>
     </div>
@@ -68,13 +87,13 @@
         <h4>Thumbnail</h4>
         <div class="row">
             <div class="col-md-4">
-                <img src="Glasgow.jpg" alt="Glasgow" class="img-thumbnail"height="300" width="300">
+                <img src="Glasgow.jpg" alt="Glasgow" class="img-thumbnail" height="300" width="300">
             </div>
             <div class="col-md-4">
-                <img src="Dallas.jpg.jpg" alt="Dallas" class="img-thumbnail"height="300" width="300">
+                <img src="Dallas.jpg.jpg" alt="Dallas" class="img-thumbnail" height="300" width="300">
             </div>
             <div class="col-md-4">
-                <img src="Rome.jpg" alt="Rome" class="img-thumbnail"height="300" width="300">
+                <img src="Rome.jpg" alt="Rome" class="img-thumbnail" height="300" width="300">
             </div>
         </div>
     </div>
@@ -83,55 +102,55 @@
     <br>
     <div class="container">
         <h4>Table</h4>
-        <table class="table" >
+        <table class="table">
             <caption>Cities, Rivers, and Trees</caption>
             <thead class="table-dark">
-              <tr>
-                <th scope="col">Letter</th>
-                <th scope="col">City</th>
-                <th scope="col">River</th>
-                <th scope="col">Tree</th>
-              </tr>
+                <tr>
+                    <th scope="col">Letter</th>
+                    <th scope="col">City</th>
+                    <th scope="col">River</th>
+                    <th scope="col">Tree</th>
+                </tr>
             </thead>
             <tbody>
-              <tr class="table-secondary">
-                <th scope="row">G</th>
-                <td>Glasgow</td>
-                <td>Genesee River</td>
-                <td>Grape Tree</td>
-              </tr>
-              <tr class="table-light">
-                <th scope="row">U</th>
-                <td>Utrecht</td>
-                <td>Ugashik River</td>
-                <td>Umbrella Tree</td>
-              </tr>
-              <tr class="table-success">
-                <th scope="row">D</th>
-                <td>Dallas</td>
-                <td>Doe River</td>
-                <td>Dampson Tree</td>
-              </tr>
-              <tr class="table-warning">
-                <th scope="row">U</th>
-                <td>Uppsala</td>
-                <td>Umatilla  River</td>
-                <td>Upas Tree</td>
-              </tr>
-              <tr class="table-stripped">
-                <th scope="row">R</th>
-                <td>Rome</td>
-                <td>Rubicon River</td>
-                <td>Redwood Tree</td>
-              </tr>
-              <tr class="table-danger">
-                <th scope="row">U</th>
-                <td>Ulan-Ude</td>
-                <td>Unadilla River</td>
-                <td>Ulmus Tree</td>
-              </tr>
+                <tr class="table-secondary">
+                    <th scope="row">G</th>
+                    <td>Glasgow</td>
+                    <td>Genesee River</td>
+                    <td>Grape Tree</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">U</th>
+                    <td>Utrecht</td>
+                    <td>Ugashik River</td>
+                    <td>Umbrella Tree</td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">D</th>
+                    <td>Dallas</td>
+                    <td>Doe River</td>
+                    <td>Dampson Tree</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">U</th>
+                    <td>Uppsala</td>
+                    <td>Umatilla River</td>
+                    <td>Upas Tree</td>
+                </tr>
+                <tr class="table-stripped">
+                    <th scope="row">R</th>
+                    <td>Rome</td>
+                    <td>Rubicon River</td>
+                    <td>Redwood Tree</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">U</th>
+                    <td>Ulan-Ude</td>
+                    <td>Unadilla River</td>
+                    <td>Ulmus Tree</td>
+                </tr>
             </tbody>
-          </table>
+        </table>
     </div>
     <br>
     <br>
@@ -146,55 +165,98 @@
     </div>
     <br>
     <div class="container">
-      <h4>Button Groups</h4>
-      <div class="btn-toolbar">
-        <div class="btn-group" role="Success" aria-label="First Group">
-          <button type="button" class="btn btn-success">G</button>
-          <button type="button" class="btn btn-success">U</button>
-          <button type="button" class="btn btn-success">D</button>
+        <h4>Button Groups</h4>
+        <div class="btn-toolbar">
+            <div class="btn-group" role="Success" aria-label="First Group">
+                <button type="button" class="btn btn-success">G</button>
+                <button type="button" class="btn btn-success">U</button>
+                <button type="button" class="btn btn-success">D</button>
+            </div>
+            <div class="btn-group" role="Warning" aria-label="Second Group">
+                <button type="button" class="btn btn-warning">U</button>
+                <button type="button" class="btn btn-warning">R</button>
+            </div>
+            <div class="btn-group" role="Danger" aria-label="Third Group">
+                <button type="button" class="btn btn-danger">U</button>
+            </div>
         </div>
-        <div class="btn-group" role="Warning" aria-label="Second Group">
-          <button type="button" class="btn btn-warning">U</button>
-          <button type="button" class="btn btn-warning">R</button>
-        </div>
-        <div class="btn-group" role="Danger" aria-label="Third Group">
-          <button type="button" class="btn btn-danger">U</button>
-        </div>
-      </div>
     </div>
     <br>
     <div class="container">
-      <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown-Menu
-        </button>
-        <ul class="dropdown-menu dropdown-menu-light">
-          <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
-          <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
-        </ul>
-      </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown-Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-light">
+                <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+                <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+            </ul>
+        </div>
     </div>
     <br>
     <br>
-       
+
     <form>
-      <div class=" form-group" >
-        
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div><br>
-      <div class=" form-group">
-        <label for="city" class="form-label">City</label>
-        <input type="text" class="form-control" id="city">
-      </div><br>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
-      </div><br>
-      <button type="submit" class="btn btn-primary">Submit</button>
+        <div class=" form-group">
+
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div><br>
+        <div class=" form-group">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city">
+        </div><br>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-          
+    <label>Cards</label><br>
+    <div class="row">
+        <div class="card me-2" style="width: 18rem;">
+            <img src="Glasgow.jpg" class="card-img-top" alt="Glasgow">
+            <div class="card-body">
+                <h6>Glasgow</h6>
+                <p class="card-text">Glasgow is known for its vibrant cultural scene. It is home to numerous museums,
+                    galleries, and theaters. The Kelvingrove Art Gallery and Museum, the Burrell Collection, and the
+                    Gallery of Modern Art are just a few of the city's cultural institutions. Glasgow is also famous for
+                    its live music venues and has a thriving music scene, with a rich history in genres like rock and
+                    pop.</p>
+                <a href="https://https://en.wikipedia.org/wiki/Rome#Education" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+        <div class="card me-2" style="width: 18rem;">
+            <img src="Dallas.jpg.jpg" class="card-img-top" alt="Dallas">
+            <div class="card-body">
+                <h6>Dallas</h6>
+                <p class="card-text">Dallas offers a wide range of cultural attractions, including museums, theaters,
+                    and art galleries. The Dallas Arts District is a major cultural hub, housing institutions like the
+                    Dallas Museum of Art, the Nasher Sculpture Center, and the Winspear Opera House. The city also hosts
+                    cultural events and festivals throughout the year.
+                    Dallas is a dynamic and vibrant city that combines modernity with a rich cultural heritage. It
+                    attracts residents and visitors alike with its opportunities for business, culture, and
+                    entertainment.
+                </p>
+                <a href="https://https://en.wikipedia.org/wiki/Rome#Education" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+        <div class="card me-2" style="width: 18rem;">
+            <img src="Rome.jpg" class="card-img-top" alt="Rome">
+            <div class="card-body">
+                <h6>Rome</h6>
+                <p class="card-text">Miami enjoys a vibrant culture that is influenced by a diverse population from all
+                    around the world.
+                    Miami is known as the "Magic City" for seemingly popping up overnight due to its young age and
+                    massive growth.
+                    The city itself is infamous for its drug war in the early 1980s and its outrun aesthetics</p>
+                <a href="https://en.wikipedia.org/wiki/Education_in_ancient_Rome#:~:text=The%20Roman%20education%20system%20was%20based%20on%20the,basis%20for%20education%20systems%20throughout%20later%20Western%20civilization."
+                    class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+    </div>
+
     </div>
 
 
